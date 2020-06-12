@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Point;
-//按键
+//Key
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
@@ -24,7 +24,7 @@ public class Snake extends JFrame {
 	public void init() {
 		// 最初の食い物座標
 		point.setLocation(100, 100);
-		// えび最初の身長
+		// ヘビ最初の身長
 		for (int i = 0; i < 6; i++) {
 			list.add(new Point(300 + 10 * i, 300));
 
@@ -58,7 +58,7 @@ public class Snake extends JFrame {
 		// フレーム色
 		g2.setColor(Color.RED);
 		g2.drawRect(0, 0, 400, 400);
-        // えびの色
+        // ヘビの色
 		g2.setColor(Color.GREEN);
 		for (int i = 0; i < list.size(); i++) {
 			g2.fillRect(list.get(i).x, list.get(i).y, 10, 10);
